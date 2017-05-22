@@ -87,7 +87,7 @@ public class Window extends JFrame {
 
     public void toggleGamePanel() {
         if(!questionLoader.hasNextQuestion()) {
-            rootPane.add(new EndGamePane(2, 2));
+            rootPane.add(new EndGamePane(Score, QAsked));
             layout.last(rootPane);
         } else {
             layout.first(rootPane);
