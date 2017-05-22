@@ -22,6 +22,8 @@ public class ResultPane extends JPanel {
         score.setFont(new Font("Arial", Font.BOLD, 60));
         this.add(score);
         nextButton = new JButton();
+        nextButton.setText("Next Question");
+        nextButton.setFont(new Font("Arial", Font.PLAIN, 25));
         nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {

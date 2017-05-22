@@ -8,8 +8,6 @@ import java.awt.event.ActionListener;
  */
 public class Window extends JFrame {
 
-    //TODO:: Score Tracking
-
     private JPanel gamePanel;
     private QuestionPane questionPane;
     private AnswerPane answerPane;
@@ -56,8 +54,6 @@ public class Window extends JFrame {
             questionPane.setNewQuestion(question);
             answerPane.setNewQuestion(question);
             QAsked++;
-        } else {
-            //TODO: Deal with there being no more questions.
         }
     }
 
@@ -90,8 +86,13 @@ public class Window extends JFrame {
     }
 
     public void toggleGamePanel() {
-        layout.first(rootPane);
-        loadNextQuestion();
+        if(!questionLoader.hasNextQuestion()) {
+            rootPane.add(new EndGamePane(Score, QAsked));
+            layout.last(rootPane);
+        } else {
+            layout.first(rootPane);
+            loadNextQuestion();
+        }
     }
 
 }
