@@ -7,42 +7,36 @@
 #Fake Answer
 90
 What is ∫x^n dx ? , Answer is ∫
-∫
 x^(n+1)/n+1 + C
 nx^(n-1)
 x^(n+1)/n+1
 x/n + e
 90
 What is ∫sinx dx ?, Answer is ∫
-∫
 -cosx + C
 -cscx + C
 cosx + C
 cscx + C
 90
 What is ∫cosx dx ?, Answer is ∫
-∫
 sinx + C
 -secx + C
 -sinx + C
 cscx + C
 90
 What is ∫sec^2x dx ?, Answer is ∫
-  ∫
 tanx + C
 sinx + C
 -sinx + C
 cotx + C
 90
 What is ∫csc^2x dx ?, Answer is ∫
-  ∫
 -cotx + C
 sinx + C
 -tanx + C
 cotx + C
 90
 What is ∫secxtanx dx ?, Answer is ∫
-  ∫
 secx + C
 tanx + C
 -sinx + C
