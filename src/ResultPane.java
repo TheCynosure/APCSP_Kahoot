@@ -10,14 +10,17 @@ import java.awt.event.ActionListener;
  */
 public class ResultPane extends JPanel {
 
-    private JLabel result;
+    private JLabel result,score;
     private JButton nextButton;
 
     public ResultPane() {
         result = new JLabel("Result", SwingConstants.CENTER);
-        this.setLayout(new GridLayout(2,1));
+        this.setLayout(new GridLayout(3,1));
         result.setFont(new Font("Arial", Font.BOLD, 60));
         this.add(result);
+        score = new JLabel("Score", SwingConstants.CENTER);
+        score.setFont(new Font("Arial", Font.BOLD, 60));
+        this.add(score);
         nextButton = new JButton();
         nextButton.addActionListener(new ActionListener() {
             @Override
@@ -33,4 +36,6 @@ public class ResultPane extends JPanel {
     public void setResultText(String resultText) {
         result.setText(resultText);
     }
+    public void setScoreText(String scoreText) {score.setText(scoreText);}
+
 }

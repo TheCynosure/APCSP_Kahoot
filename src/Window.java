@@ -17,6 +17,7 @@ public class Window extends JFrame {
     private JPanel rootPane;
     private CardLayout layout;
     private QuestionLoader questionLoader = new QuestionLoader("Questions.txt");
+    private int Score,QAsked;
 
     public Window() {
         super();
@@ -24,6 +25,8 @@ public class Window extends JFrame {
         rootPane = new JPanel();
         resultPane = new ResultPane();
         gamePanel = new JPanel();
+        Score = 0;
+        QAsked = 0;
         addSubPanels();
 
         this.setSize(600,600);
@@ -52,6 +55,7 @@ public class Window extends JFrame {
             Question question = questionLoader.nextQuestion();
             questionPane.setNewQuestion(question);
             answerPane.setNewQuestion(question);
+            QAsked++;
         } else {
             //TODO: Deal with there being no more questions.
         }
@@ -64,19 +68,23 @@ public class Window extends JFrame {
     }
 
     public void answerCorrect() {
+        Score++;
         resultPane.setResultText("Correct");
+        resultPane.setScoreText("Score = "+Score+"/"+QAsked);
         questionPane.questionBeingAsked = false;
         layout.next(rootPane);
     }
 
     public void answerIncorrect() {
         resultPane.setResultText("Incorrect");
+        resultPane.setScoreText("Score = "+Score+"/"+QAsked);
         questionPane.questionBeingAsked = false;
         layout.next(rootPane);
     }
 
     public void answerOutOfTime() {
         resultPane.setResultText("Out of Time");
+        resultPane.setScoreText("Score = "+Score+"/"+QAsked);
         questionPane.questionBeingAsked = false;
         layout.next(rootPane);
     }
