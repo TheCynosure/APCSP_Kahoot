@@ -60,11 +60,11 @@ e^(x-1) + C
 ln|x| + C
 sinx + C
 90
-What is ∫dx/√(1-x^2) ?
--cscx + C
-cscx^2 + C
--cotx + C
-cotx + C
+What is ∫-dx/√(1-x^2) ?
+arccosx + C
+arcsinx + C
+arctanx + C
+cscx + C
 90
 What is ∫dx/√(1-x^2) ?
 arcsinx + C
