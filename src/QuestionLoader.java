@@ -16,6 +16,13 @@ public class QuestionLoader {
         questions = new ArrayList<>();
         questionFilePath = path;
         loadQuestions();
+        for(int i = 0; i < questions.size(); i++) { // Shuffle the Questions
+            int firstRando = (int) (Math.random() * questions.size());
+            int secondRando = (int) (Math.random() * questions.size());
+            Question temp = questions.get(firstRando);
+            questions.set(firstRando, questions.get(secondRando));
+            questions.set(secondRando, temp);
+        }
     }
 
     private void loadQuestions() {
