@@ -24,13 +24,13 @@ sinx + C
 -sinx + C
 cscx + C
 90
-What is ∫sec^2x dx ?
+What is ∫secx^2 dx ?
 tanx + C
 sinx + C
 -sinx + C
 cotx + C
 90
-What is ∫csc^2x dx ?
+What is ∫cscx^2 dx ?
 -cotx + C
 sinx + C
 -tanx + C
@@ -72,7 +72,7 @@ arctanx + C
 arccosx + C
 cotx + C
 90
-What is ∫dx/(1-x^2) ?
+What is ∫dx/(1+x^2) ?
 arctanx + C
 arcsinx + C
 arccosx + C
@@ -91,10 +91,10 @@ f(g(x))
 g'(f(x))*f'(x)
 90
 What is the derivative of f(x)/g(x) ?
-answer
+f'(x)*g(x) - g'(x)*f(x) / (g(x))^2
 g'(x)/f'(x)
 f'(x)/g'(x)
-cotx + C
+f(x)*g'(x) - g(x)*f'(x) / (g(x))^2
 90
 What is the derivative of f(g(x)) ?
 f'(g(x))*g'(x)
@@ -145,10 +145,10 @@ x
 e^x
 90
 What is the derivative of log base a of x ?
-answer
-g'(x)/f'(x)
-f'(x)/g'(x)
-cotx + C
+1/x*lna
+1/a*lnx
+a*lnx
+a/logx
 90
 What is the derivative of e^x ?
 e^x
@@ -161,5 +161,3 @@ a^x * lna
 e^x
 1/ax
 ax
-
-
