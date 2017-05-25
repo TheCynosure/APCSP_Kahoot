@@ -5,157 +5,157 @@
 #Fake Answer
 #Fake Answer
 #Fake Answer
-90
+35
 What is ∫x^n dx ?
 x^(n+1)/n+1 + C
 nx^(n-1)
 x^(n+1)/n+1
 x/n + e
-90
+30
 What is ∫sinx dx ?
 -cosx + C
 -cscx + C
 cosx + C
 cscx + C
-90
+30
 What is ∫cosx dx ?
 sinx + C
 -secx + C
 -sinx + C
 cscx + C
-90
+45
 What is ∫secx^2 dx ?
 tanx + C
 sinx + C
 -sinx + C
 cotx + C
-90
+45
 What is ∫cscx^2 dx ?
 -cotx + C
 sinx + C
 -tanx + C
 cotx + C
-90
+45
 What is ∫secxtanx dx ?
 secx + C
 tanx + C
 -sinx + C
 cotx + C
-90
+45
 What is ∫cscxcotx dx ?
 -cscx + C
 cscx^2 + C
 -cotx + C
 cotx + C
-90
+35
 What is ∫1/x dx ?
 ln|x| + C
 e^x + C
 1/(a * lnx) + C
 a^x + C
-90
+30
 What is ∫e^x dx ?
 e^x + C
 e^(x-1) + C
 ln|x| + C
 sinx + C
-90
+45
 What is ∫-dx/√(1-x^2) ?
 arccosx + C
 arcsinx + C
 arctanx + C
 cscx + C
-90
+45
 What is ∫dx/√(1-x^2) ?
 arcsinx + C
 arctanx + C
 arccosx + C
 cotx + C
-90
+45
 What is ∫dx/(1+x^2) ?
 arctanx + C
 arcsinx + C
 arccosx + C
 cscx + C
-90
+35
 What is the derivative of x^n ?
 nx^(n-1)
 nx
 n^(x-1)
 x^(n-1)
-90
+45
 What is the derivative of f(x)*g(x) ?
 f'(x)*g(x)+g'(x)f(x)
 f'(g(x))*g'(x)
 f(g(x))
 g'(f(x))*f'(x)
-90
+45
 What is the derivative of f(x)/g(x) ?
 f'(x)*g(x) - g'(x)*f(x) / (g(x))^2
 g'(x)/f'(x)
 f'(x)/g'(x)
 f(x)*g'(x) - g(x)*f'(x) / (g(x))^2
-90
+45
 What is the derivative of f(g(x)) ?
 f'(g(x))*g'(x)
 f(g(x))
 f'(x)/g'(x)
 g'(f(x))*f'(x)
-90
+30
 What is the derivative of sinx ?
 cosx
 sinx^2
 cscx
 -cosx
-90
+30
 What is the derivative of cosx ?
 -sinx
 sinx
 secx
 -cosx
-90
+30
 What is the derivative of tanx ?
 secx^2
 secx
 cotx
 -cscx^2
-90
+35
 What is the derivative of cotx ?
 -cscx^2
 secxtanx
 -cscxcotx
 -secx^2
-90
+40
 What is the derivative of secx ?
 secxtanx
 -cscxcotx
 -cosx
 secx^2
-90
+40
 What is the derivative of cscx ?
 -cscxcotx
 -secxtanx
 secx^2
 -cosx
-90
+30
 What is the derivative of ln(x) ?
 1/x
 x
 1/lnx
 e^x
-90
+50
 What is the derivative of log base a of x ?
 1/x*lna
 1/a*lnx
 a*lnx
 a/logx
-90
+30
 What is the derivative of e^x ?
 e^x
 x
 1/x
 e^2x
-90
+30
 What is the derivative of a^x ?
 a^x * lna
 e^x
